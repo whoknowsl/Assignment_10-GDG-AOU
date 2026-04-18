@@ -46,46 +46,50 @@ nav{
     position: sticky;
 }
 .btn-learn-more{
-    padding: 20px 25px;
+    padding: 15px 25px;
     border: none;
     border-radius: 30px;
     background-color: var(--aithColor);
     color: var(--fourthColor);
 }
-.hero-section{
+ .hero-section{
     display: flex;
     flex-direction: column;
-    padding-inline: 40px;
-    gap: -40px;
-}
+    align-items: center;
+} 
 .hero-section-text{
     font-family: "Crimson Text", serif;
     font-size: 140px;
     font-weight: 300;
     text-align: center;
-    transform: translateY(5rem);
+} 
+ .green-div{
+    position: relative;
+    bottom: 460px;
+    width: 1200px;
+    height: 362px;
+    background-color: var(--sevenColor);
+    border-radius: 30px;
 
 }
-.green-div{
-    background-color: var(--sevenColor);
-    padding: 250px  200px;
-    border-radius: 20px;
-    overflow: hidden;
-}
 .hero0img{
-    align-self: center;
-    transform: translate(8rem,34rem);
+    position: relative;
+    left: 200px;
+    object-fit: contain;
+    width: 800px;
+    height: 738px;
+    z-index: 1;
 }
 .hero-green-div{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transform: translateY(-15rem);
 }
 .trusted-by-page{
+    bottom: 300px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    transform: translatey(-6rem);
     gap: 50px;
 }
 .icons-of-trusted-company{
@@ -104,6 +108,8 @@ nav{
     object-fit: contain;
 }
 .benefits-page{
+    position: relative;
+    bottom: 30px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -112,7 +118,6 @@ nav{
 .Benefits-cards{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
 }
 .Benefits-card{
     display: flex;
@@ -154,17 +159,14 @@ hr{
     border-color: var(--thirdColor);
 }
 .image-page1{
-    display:flex;
-    flex-direction:column;
-    align-self: center;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    
 }
 .image-of-page1{
-    width: 1200px;
     object-fit: cover;
-    border-radius: 30px;
+    width: 1188px;
+    height: 607px;
+    border-radius: 50px;
 }
 .see-the-big-picture-page{
     display: flex;
@@ -305,16 +307,19 @@ td{
     object-fit: cover;
 }
 .map-your-story-page{
-     font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
+    padding: 100px 0px;
+    padding-bottom: 15rem;
     flex-direction: column;
-    gap:80px;
-    padding: 200px 50px;
 }
 .map-your-story{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    padding-bottom: 100px;
+    padding-inline: 30px;
 }
 .map-your-story-btn{
     background-color: var(--sixColor);
@@ -325,14 +330,14 @@ td{
 }
 .mapYourMap-cards{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 .mapYourMap-card{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding-inline:50px ;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
     border-top: 2px solid var(--thirdColor);
 }
 .mapYourMap-number{
@@ -348,25 +353,22 @@ td{
     color: var(--secondColor);
 }
 .image-page3{
-     display:flex;
-    flex-direction:column;
-    align-self: center;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
 }
 .image-11{
-    width: 1200px;
     object-fit: cover;
+    width: 1200px;
+    height: 664px;
     border-radius: 30px;
 }
 .connect-page{
+    position: relative;
+    top: 2rem;
     font-family: "Inter", sans-serif;
-    padding: 150px;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
     border-top: 2px solid var(--thirdColor);
     border-bottom:  2px solid var(--thirdColor);
 }
@@ -436,29 +438,32 @@ td{
     font-weight: 600;
    }
    .green-div{
+    position: relative;
+    bottom: 360px;
+    left: 150px;
+    width: 720px;
+    height: 362px;
     background-color: var(--sevenColor);
-    padding: 100px 10px;
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 30px;
 }
 .hero0img{
-    transform: translate(90px,220px);
-    align-self: center;
-    object-fit: cover;
-    width: 500px;
+    position: relative;
+    left: 170px;
+    top: 5px;
+    object-fit: contain;
+    width: 676px;
+    height: 423px;
+    z-index: 1;
+}
+.hero-section-text{
+    line-height: 8rem;
 }
 .hero-section{
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    align-items: stretch;
+    gap: 50px;
 }
-   .hero-section-text{
-    line-height: 9rem;
-   }
-   .trusted-by-page{
-    
-    padding: 0px;
-   }
    .icons-of-trusted-company{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -578,29 +583,35 @@ td{
     border-radius: 30px;
     box-shadow: 1px 1px 1px 1px var(--thirdColor);
     }
-    .hero-section-text{
-        font-family: "Crimson Text", serif;
-        font-size: 64px;
-        font-weight: 600;
-    }
     .hero-section{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        gap: 200px;
+        justify-content: space-between;
+        align-items: center;
     }
-    .hero0img{
-        display: flex;
-        width: 220px;
-        object-fit: cover;
-        align-self: center;
-        transform: translate(55px,250px);
+    
+    .hero-section-text{
+        font-family: "Crimson Text", serif;
+        text-align: center;
+        font-size: 78px;
+        font-weight: 500;
+        white-space: 1rem;
     }
     .green-div{
-        padding: 120px 0px;
-        padding-top: 120px;
-        padding-inline: 0px;
-        border-radius: 50px;
+        position:relative;
+        bottom: 25rem;
+        background-color: var(--sevenColor);
+        border-radius: 30px;
+        width: 340px;
+        height: 316px;
+    }
+    .hero0img{
+        position: relative;
+        left: 3rem;
+      width: 248px;
+      height: 521px;
+      object-fit: contain;
+      z-index: 1;
     }
     .trusted-by-page{
         margin: 0;
@@ -636,7 +647,9 @@ td{
         flex-direction: column;
     }
     .image-of-page1{
-        width: 300px;
+        object-fit: cover;
+        height: 600px;
+        width: 350px;
     }
     .the-big-text-of-big-pic{
         font-size: 58px;
