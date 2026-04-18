@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --firsColor:rgb(0, 0, 0);
+    --secondColor:rgb(145, 145, 145);
+    --thirdColor:rgb(232, 232, 232);
+    --fourthColor:#ffffff;
+    --sixColor:#dfecc6;
+    --sevenColor:rgb(142, 156, 120);
+    --aithColor:rgb(72, 92, 17);
+}
+body{
+    background-color: var(--fourthColor);
+}
+
+nav{
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    top: 0;
+    position: sticky;
+    z-index: 1000; 
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    padding: 20px;
+}
+.nav-list{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 50px;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+}
+.btn-learn-more{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--aithColor);
+    color: var(--fourthColor);
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    gap: -40px;
+}
+.hero-section-text{
+    font-family: "Crimson Text", serif;
+    font-size: 140px;
+    font-weight: 300;
+    text-align: center;
+    transform: translateY(5rem)
+
+}
+.green-div{
+    background-color: var(--sevenColor);
+    padding: 250px  200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hero0img{
+    align-self: center;
+    transform: translate(0rem,34rem);
+}
+.hero-green-div{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateY(-15rem);
+}
+.trusted-by-page{
+    display: flex;
+    flex-direction: column;
+    transform: translatey(-6rem);
+    gap: 50px;
+}
+.icons-of-trusted-company{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:30px ;
+}
+.text-trusted-by{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--secondColor);
+    padding-inline: 50px;
+}
+.icons-trusted-page, .Benefits-icons{
+    object-fit: contain;
+}
+.benefits-page{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-inline-start: 50px;
+}
+.Benefits-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.Benefits-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+}
+.Benefits-text-h1{
+    font-family: "Crimson Text", serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+.text-benefits, .text-specs{
+     font-family: "DM Sans", sans-serif;
+     font-weight: 500;
+     letter-spacing: 1px;
+    color: var(--aithColor)
+}
+.Benefits-text-h3{
+    font-family: "Inter", sans-serif;
+    color: var(--secondColor);
+    font-weight: 500;
+}
+.card-text-h4{
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+}
+.card-para{
+    font-family: "Inter", sans-serif;
+    color: var(--secondColor);
+    line-height: 20px;
+}
+hr{
+    width: inherit;
+    height: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: var(--thirdColor);
+}
+.image-page1{
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-of-page1{
+    width: 1200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.see-the-big-picture-page{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0px;
+}
+.the-big-text-of-big-pic, .main-text-of-why-choose, .map-your-story-text, .connect-page-big-text{
+    font-family: "Crimson Text", serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+.conten-of-the-big-pic-page{
+    border-top: 1px solid var(--thirdColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.para-of-big-pic{
+    font-family: "Inter", sans-serif;
+    color: var(--secondColor);
+}
+.list-item{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 30px;
+    border-top:1px solid var(--thirdColor);
+    padding: 20px;
+
+}
+.number-span{
+    font-size: 18px;
+    color: var(--secondColor);
+}
+.btn-discover-more {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    background-color: var(--sixColor);
+    border: none;
+    border-radius: 30px;
+    align-self: start;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+.see-the-big-pic{
+    border-radius: 20px;
+}
+.why-choose-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 100px;
+    border-top: 3px solid var(--thirdColor);
+}
+.why-choose-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.btn-of-why-choose-page{
+    background-color: var(--sixColor);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+.text-para-why-choose{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: var(--secondColor);
+}
+table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+th{
+    font-size: 32px;
+    color: var(--secondColor);
+    border-bottom: 2px solid var(--secondColor);
+}
+td{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    padding: 30px 150px;
+    border-bottom: 1px solid var(--thirdColor);
+    border-left: 1px solid var(--thirdColor);
+}
+.h3-table{
+    font-family: "Crimson Text", sans-serif;
+    font-weight: 500;
+    padding: 20px;
+}
+td{
+    padding: 40px 100px;
+}
+.fa-check,.fa-xmark{
+    color: var(--secondColor);
+}
+.table-page{
+    padding: 100px 0px;
+}
+.image1-page2{
+    display: flex;
+    gap: 80px;
+    padding: 50px;
+    border-bottom: 2px solid var(--thirdColor);
+}
+.image1-page2-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-top: 2px solid var(--thirdColor);
+    padding: 40px;
+}
+.quote-of-the-day{
+    font-family: "Crimson Text", serif;
+    padding: 30px;
+    letter-spacing: -2px;
+    line-height: 50px;
+    font-size: 40px;
+}
+.div-of-p{
+     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.para-of-head{
+    color: var(--aithColor);
+}
+.image10-of-page2{
+    border-radius: 20px;
+    object-fit: cover;
+}
+.map-your-story-page{
+     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    padding: 200px 50px;
+}
+.map-your-story{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-your-story-btn{
+    background-color: var(--sixColor);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+.mapYourMap-cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.mapYourMap-card{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-inline:50px ;
+    border-top: 2px solid var(--thirdColor);
+}
+.mapYourMap-number{
+    font-size: 68px;
+    color: var(--secondColor);
+}
+.mapYourMap-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mapYourMap-text{
+    color: var(--secondColor);
+}
+.image-page3{
+     display:flex;
+    flex-direction:column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.image-11{
+    width: 1200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.connect-page{
+    font-family: "Inter", sans-serif;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-top: 2px solid var(--thirdColor);
+    border-bottom:  2px solid var(--thirdColor);
+}
+.connect-page-para{
+    text-align: center;
+    color: var(--secondColor);
+    
+}
+.connect-page-btn{
+    background-color: var(--aithColor);
+    color: var(--fourthColor);
+    padding: 10px 220px;
+    border-radius: 30px;
+}
+.footer-list{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    gap: 30px;
+    font-weight: 700;
+}
+.footr{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+.emptySpace{
+    padding: 80px ;
+}
+.footer-copyrights{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.text{
+    display: flex;
+    gap: 15px;
+}
+.firspartofcopurights{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    color: var(--aithColor);
+}
+.all-rights{
+    font-family: "DM Sans", sans-serif;
+    word-spacing: 5px;
+    color: var(--aithColor);
+}
