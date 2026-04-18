@@ -14,7 +14,9 @@
 body{
     background-color: var(--fourthColor);
 }
-
+.nav-bar-for-phone{
+    display: none;
+}
 nav{
     display: flex;
     font-family: "DM Sans", sans-serif;
@@ -61,7 +63,7 @@ nav{
     font-size: 140px;
     font-weight: 300;
     text-align: center;
-    transform: translateY(5rem)
+    transform: translateY(5rem);
 
 }
 .green-div{
@@ -72,7 +74,7 @@ nav{
 }
 .hero0img{
     align-self: center;
-    transform: translate(0rem,34rem);
+    transform: translate(8rem,34rem);
 }
 .hero-green-div{
     display: flex;
@@ -88,6 +90,7 @@ nav{
 }
 .icons-of-trusted-company{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom:30px ;
 }
@@ -415,4 +418,345 @@ td{
     font-family: "DM Sans", sans-serif;
     word-spacing: 5px;
     color: var(--aithColor);
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+   .btn-learn-more{
+    padding: 15px 20px;
+    font-weight: 600;
+   }
+   .green-div{
+    background-color: var(--sevenColor);
+    padding: 100px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hero0img{
+    transform: translate(90px,220px);
+    align-self: center;
+    object-fit: cover;
+    width: 500px;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+   .hero-section-text{
+    line-height: 9rem;
+   }
+   .trusted-by-page{
+    
+    padding: 0px;
+   }
+   .icons-of-trusted-company{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline:150px;
+    gap: 50px;
+    column-gap: 100px;
+    padding-bottom: 80px;
+    border-bottom:1px solid var(--thirdColor);
+   }
+   .text-trusted-by{
+    font-size: 18px;
+   }
+   .text-trusted-by{
+    height: 30px;
+   }
+   .Benefits-cards{
+    display: flex;
+   flex-wrap: wrap;
+   }
+   .image-of-page1{
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 500px;
+   }
+   .see-the-big-picture-page{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+   }
+   .para-of-big-pic br{
+    display: none;
+   }
+   .conten-of-the-big-pic-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+   }
+   .see-the-big-pic{
+    align-self: center;
+   }
+   .table-page{
+    tab-size: 120px;
+   }
+   .image1-page2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+   }
+   .image10-of-page2{
+    align-self: center;
+   }
+   .quote-of-the-day br{
+    display: none;
+   }
+   .div-of-p{
+    display: flex;
+    flex-direction: row;
+   }
+   .map-your-story-page{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+   .image-11{
+    width: 700px;
+   }
+   hr{
+    align-self: center;
+   }
+   .connect-page{
+    padding-top: 50px;
+   }
+   .connect-page-para br{
+    font-size: 8px;
+    display: none;
+   }
+   .icone-walking-man{
+    width: 30px;
+   }
+   .connect-page-btn{
+    flex: 1 1 100%;
+     width: 100%;
+     text-align: justify;
+     padding: 5px;
+     text-align: center;
+   }
+}
+@media screen and (max-width: 767px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: none;   
+    }
+    .nav-bar-for-phone{
+    font-family: "DM Sans", sans-serif;
+    top: 0;
+    position: sticky;
+    z-index: 1000; 
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px var(--thirdColor);
+    }
+    .hero-section-text{
+        font-family: "Crimson Text", serif;
+        font-size: 64px;
+        font-weight: 600;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 200px;
+    }
+    .hero0img{
+        display: flex;
+        width: 220px;
+        object-fit: cover;
+        align-self: center;
+        transform: translate(55px,250px);
+    }
+    .green-div{
+        padding: 120px 0px;
+        padding-top: 120px;
+        padding-inline: 0px;
+        border-radius: 50px;
+    }
+    .trusted-by-page{
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--secondColor);
+    }
+    .text-trusted-by{
+        padding-top: 0px;
+        font-size: 15px;
+        
+    }
+    .icons-of-trusted-company{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .text-benefits{
+        font-size: 12px;
+    }
+    .Benefits-text-h1{
+        white-space: -30px;
+    }
+    .Benefits-text-h3{
+        font-style: "DM Sans", sans-serif;
+        color: var(--secondColor);
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .Benefits-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-of-page1{
+        width: 300px;
+    }
+    .the-big-text-of-big-pic{
+        font-size: 58px;
+    }
+    .see-the-big-picture-page{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .conten-of-the-big-pic-page{
+        padding-inline: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .para-of-big-pic br{
+        display: none;
+        line-height: 1em;
+    }
+    .the-big-text-of-big-pic{
+        line-height: 1em;
+    }
+    .see-the-big-pic{
+        width: 300px;
+        padding-bottom: 0px;
+    }
+    .text-specs{
+        font-size: 10px;
+    }
+    .main-text-of-why-choose{
+        text-align: center;
+        font-size: 43px;
+    }
+    .text-para-why-choose br{
+        font-size: 8px;
+        display: none;
+    }
+    table{
+        overflow: auto;
+        padding: 0px;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+}
+th{
+    font-size: 28px;
+    color: var(--secondColor);
+    border-bottom: 2px solid var(--secondColor);
+}
+td{
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 0px 0px;
+    border-bottom: 1px solid var(--thirdColor);
+    border-left: 1px solid var(--thirdColor);
+}
+.h3-table{
+    font-family: "Crimson Text", sans-serif;
+    font-weight: 500;
+    padding: 0px;
+}
+td{
+    padding: 40px 100px;
+}
+.fa-check,.fa-xmark{
+    color: var(--secondColor);
+}
+.table-page{
+    padding: 100px 0px;
+}
+.image1-page2{
+    display: flex;
+    flex-direction: column;
+}
+.image10-of-page2{
+    width: 300px;
+    object-fit: contain;
+}
+.quote-of-the-day {
+    font-size: 28px;
+    align-self: center;
+}
+.quote-of-the-day br{
+    display: none;
+}
+.div-of-p{
+    display: flex;
+    flex-direction: row;
+}
+.map-your-story{
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    gap: 30px;
+}
+.map-your-story-btn{
+    align-self: flex-start;
+}
+.mapYourMap-cards{
+    overflow-y:scroll;
+}
+.image-11{
+    width: 300px;
+}
+.connect-page{
+    display: flex;
+    align-items: normal;
+}
+.connect-page-big-text{
+   font-size: 32px;
+    text-align: center;
+}
+.text, .all-rights{
+    font-size: 10px;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+}
 }

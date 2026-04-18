@@ -15,6 +15,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="nav-bar-for-phone">
+      <div class="logo"><h1>Area</h1></div>
+      <span><img src="icons/icon6.png" width="30px" >
+      </span>
+    </div>
     <nav>
       <div class="logo"><h1>Area</h1></div>
       <div class="nav-lists">
@@ -34,7 +39,12 @@
     <div class="hero-section">
       <h1 class="hero-section-text">Browse everything.</h1>
       <div class="hero-green-div">
-        <img src="images/image1.png" class="hero0img" width="1000px" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="iphone/iphone1.png">
+          <source media="(min-width: 769px) and (max-width: 1024px)" src="tablet/tablet1.png">
+          <img src="images/image1.png" class="hero0img" width="1000px" />
+        </picture>
+        
         <div class="green-div"></div>
       </div>
     </div>
@@ -120,7 +130,11 @@
       </div>
     </div>
     <div class="image-page1">
-      <img src="images/image8.png" class="image-of-page1" />
+      <picture>
+        <source media="(max-width: 767px)" srcset="iphone/iphone2.png">
+        <source media="(min-width: 769px) and (max-width: 1024px)" src="tablet/tablet2.png">
+        <img src="images/image8.png" class="image-of-page1" />
+      </picture>
     </div>
     <div class="see-the-big-picture-page">
       <div class="conten-of-the-big-pic-page">
@@ -158,7 +172,11 @@
         </div>
         <button class="btn-discover-more">Discover More</button>
       </div>
-      <img src="images/image9.png" width="600px" class="see-the-big-pic" />
+      <picture>
+        <source media="(max-width: 767px)" srcset="iphone/iphone3.png">
+        <img src="images/image9.png" width="600px" class="see-the-big-pic" />
+      </picture>
+      
     </div>
     <div class="why-choose-page">
       <div class="why-choose-content">
@@ -265,9 +283,11 @@
       </table>
     </div>
     <div class="image1-page2">
-      <img src="images/image10.png" width="600px" class="image10-of-page2">
+      <picture><source media="(max-width: 767px)" srcset="iphone/iphone4.png">
+        <img src="images/image10.png" width="600px" class="image10-of-page2">
+      </picture>
       <div class="image1-page2-content">
-        <q class="quote-of-the-day">I was skeptical, but Area has<br>completely transformed the way I<br>manage my business. The data<br>visualizations are so clear and<br>intuitive, and the platform is so easy<br>to use. I can't imagine running my<br>company without it.</q>
+        <q class="quote-of-the-day">I was skeptical, but Area <br>has<br>completely transformed the way I<br>manage my business. The data<br>visualizations are so clear and<br>intuitive, and the platform is so easy<br>to use. I can't imagine running my<br>company without it.</q>
         <div class="div-of-p"> <p class="para-of-john">John Smith</p>
         <p class="para-of-head">Head of Data</p></div>
        
@@ -303,10 +323,14 @@
       </div>
   </div>
   <div class="image-page3">
-    <img src="images/image11.png" class="image-11"></div>
+    <picture>
+      <source media="(max-width: 767px)" srcset="iphone/iphone5.png">
+      <source media="(min-width: 769px) and (max-width: 1024px)" src="tablet/tablet3.png">
+      <img src="images/image11.png" class="image-11"></picture>
+    </div>
     <div class="connect-page">
       <h1 class="connect-page-big-text">Connect with us</h1>
-    <p class="connect-page-para">Schedule a quick call to learn how Area can turn your regional data into a powerful<br>advantage.</p>
+    <p class="connect-page-para">Schedule a quick call to learn how Area can turn your regional data into a powerful <br>advantage.</p>
     <button class="connect-page-btn">Learn More</button>
   </div>
   <div class="footr">
@@ -320,7 +344,7 @@
   <div class="emptySpace"></div>
   <div class="footer-copyrights">
     <div class="firspartofcopurights">
-    <span><img src="icons/icon5.png" width="50px"></span>
+    <span><img src="icons/icon5.png" width="50px" class="icone-walking-man"></span>
     <div class="text">
       <p>© Area.</p>
     <p>2025</p>
