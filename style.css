@@ -522,47 +522,72 @@ nav{
     padding-inline: 50px;
 }
 .icons-of-trusted-company{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-inline:150px;
     gap: 50px;
     column-gap: 100px;
-    padding-bottom: 80px;
-    border-bottom:1px solid var(--thirdColor);
+    padding-bottom: 1rem;
    }
    .text-trusted-by{
     font-size: 18px;
-   }
-   .text-trusted-by{
     height: 30px;
    }
+   .warper-benfites-and-imge-page1{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15rem;
+   }
+   .image-page1{
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.image-of-page1{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 50px;
+}
    .benefits-page{
     position: relative;
     bottom: 10rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-inline-start: 3rem;
+    
     }
     .text-benefits, .text-specs{
      font-family: "DM Sans", sans-serif;
      font-weight: 500;
      letter-spacing: 1px;
-    color: var(--aithColor)
+    color: var(--aithColor);
+    padding-inline: 3rem;
 }
    .Benefits-cards{
     display: flex;
    flex-wrap: wrap;
+   justify-content: space-evenly;
    }
+   .Benefits-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid var(--secondColor);
+}
    .Benefits-text-h1{
     font-family: "Crimson Text", serif;
-    font-size: 64px;
+    font-size: 3rem;
     font-weight: 500;
+    padding-inline: 3rem;
+}
+.Benefits-text-h3{
+    font-family: "Inter", sans-serif;
+    color: var(--secondColor);
+    font-weight: 500;
+    padding-inline: 3rem;
 }
    .image-of-page1{
     display:flex;
@@ -578,7 +603,52 @@ nav{
     justify-content: space-evenly;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--secondColor);
    }
+   .the-big-text-of-big-pic, .main-text-of-why-choose, .map-your-story-text, .connect-page-big-text{
+    font-family: "Crimson Text", serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+.conten-of-the-big-pic-page{
+    border-top: 1px solid var(--thirdColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem;
+}
+.para-of-big-pic{
+    font-family: "Inter", sans-serif;
+    color: var(--secondColor);
+}
+.list-item{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 30px;
+    border-top:1px solid var(--thirdColor);
+    padding: 20px;
+
+}
+.number-span{
+    font-size: 18px;
+    color: var(--secondColor);
+}
+.btn-discover-more {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    background-color: var(--sixColor);
+    border: none;
+    border-radius: 30px;
+    align-self: start;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+.see-the-big-pic{
+    position: relative;
+    left: 13rem;
+    border-radius: 20px;
+}
    .para-of-big-pic br{
     display: none;
    }
@@ -588,9 +658,33 @@ nav{
     justify-content: space-around;
     gap: 30px;
    }
-   .see-the-big-pic{
-    align-self: center;
-   }
+   .why-choose-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 100px;
+   
+}
+.why-choose-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.btn-of-why-choose-page{
+    background-color: var(--sixColor);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+.text-para-why-choose{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: var(--secondColor);
+}
    .table-page{
     tab-size: 120px;
    }
